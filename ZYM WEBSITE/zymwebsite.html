@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Fitness</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('zym.jpg')no-repeat center center/cover;
+
+            color: honeydew;
+
+
+
+
+        }
+
+        .left {
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            left: 30px;
+            top: 8px;
+            font-family: 'Baloo 2', cursive;
+
+
+        }
+
+        .left div {
+            line-height: 2px;
+
+        }
+
+        .left img {
+            width: 80px;
+            filter: invert(100%);
+        }
+
+
+
+
+        .center {
+            display: block;
+            width: 40%;
+            margin: 18px auto;
+            border: 0.1px solid rgb(117, 145, 117);
+
+
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+
+        }
+
+
+
+        .navbar li {
+            display: inline-block;
+
+
+        }
+
+        .navbar li a {
+
+            font-size: 18px;
+
+            color: white;
+            text-decoration: none;
+
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+        }
+
+        .navbar li a:hover {
+
+            color: red;
+
+        }
+
+        .navbar li:hover {
+
+            border: 1px solid whitesmoke;
+            
+            background-color: yellowgreen;
+        }
+
+        .btn {
+            background-color: black;
+            border: 3px solid rgb(82, 116, 82);
+            color: white;
+            padding: 4px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Baloo 2', cursive;
+        }
+
+        .btn:hover {
+            color: red;
+            background-color: rgb(69, 199, 43);
+            border: 4px solid white;
+        }
+
+        .information {
+            display: inline-block;
+            border: 1px solid white;
+
+            width: 25%;
+            margin: 150px 70px;
+            height: 400px;
+
+        }
+
+        .information div {
+            border: 1px solid rgb(211, 192, 192);
+            background-color: black;
+            background-color: rgb(27, 77, 216);
+            text-align: center;
+            color: palegreen;
+        }
+
+        .content ul li {
+            line-height: 60px;
+
+
+        }
+
+        .information1 {
+
+
+            position: absolute;
+            border: 1px solid white;
+            right: 2px;
+            top: 98px;
+            width: 25%;
+            margin: 150px 70px;
+            height: 395px;
+        }
+
+        .information1 div {
+            border: 1px solid rgb(211, 192, 192);
+            background-color: rgb(27, 77, 216);
+            text-align: center;
+            color: palegreen;
+
+        }
+
+        .content1 ul li {
+            line-height: 60px;
+            color: white;
+        }
+
+        .form {
+            font-family: 'Courier New', Courier, monospace;
+            display: inline-block;
+            border: 2px solid white;
+            width: 600px;
+            height: 499px;
+            margin: 0px 400px;
+        }
+
+        .form input {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .form h1 {
+            display: inline-block;
+            font-size: 15px;
+            text-align: center;
+            color: green;
+            font-style: italic;
+            font-weight: bold;
+            border: 1px solid rgb(194, 136, 30);
+            border-radius: 10px;
+            margin-left: 200px;
+            padding: 5px 5px;
+            background-color: rgb(214, 165, 181);
+        }
+
+        .form1 input {
+
+            padding: 4px;
+            margin: 10px 100px;
+            box-sizing: border-box;
+            font-size: 15px;
+            text-align: center;
+            display: block;
+            width: 400px;
+            border: 2px solid rgb(31, 194, 72);
+        }
+
+        .form1 input:hover {
+            background-color: rgb(111, 185, 93);
+            border: 3px solid red;
+        }
+
+
+
+        .form2 {
+            color: black;
+            display: inline-block;
+            width: 400px;
+            margin-left: 100px;
+            background-color: rgb(144, 224, 207);
+            border: 3px solid peru;
+        }
+
+        .form3 {
+
+            display: inline-block;
+            width: 400px;
+            margin-left: 100px;
+            margin-top: 20px;
+
+        }
+
+        .form3 input:hover {
+            background-color: rgb(111, 185, 93);
+            border: 3px solid red;
+        }
+
+        .form3 input {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(144, 224, 207);
+            border: 3px solid peru;
+            width: 400px;
+        }
+
+        .form4 textarea {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 20px;
+            margin-left: 80px;
+            text-align: center;
+            border: 5px solid peru;
+            background-color: rgb(144, 224, 207);
+
+
+        }
+
+        .form4 textarea:hover {
+            background-color: rgb(111, 185, 93);
+            border: 3px solid red;
+        }
+
+        .php {
+            margin-top: auto;
+            margin-left: 200px;
+            display: inline-block;
+
+
+        }
+
+        .php input {
+
+            border: 2px solid green;
+            background-color: hotpink;
+            width: 100px;
+            height: 30px;
+
+        }
+
+        .php input:hover {
+            color: red;
+
+            border: 4px solid white;
+
+            background-color: rgb(69, 199, 43);
+
+
+        }
+  
+    </style>
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo2.jpg" alt="">
+            <div>SAHIL FITNESS</div>
+
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#"> About us</a></li>
+                <li> <a href="#"> Facility</a></li>
+                <li> <a href="#">contact us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Contact</button>
+            <button class="btn">Feedback</button>
+
+        </div>
+    </header>
+
+    <div class="information">
+        <div> ZYM FACILITIES </div>
+        <header class="content">
+            <ul>
+                <li>AC&nbsp;&nbsp;ZYM&nbsp;&nbsp;FACILIY</li>
+                <li>GOOD&nbsp;RESULT</li>
+                <li>EXTRA&nbsp;EQUIPMENTS</li>
+                <li>EXPERT&nbsp;TRAINER</li>
+            </ul>
+        </header>
+
+    </div>
+    <div class="information1">
+        <div>ZYM CHARGES</div>
+        <header class="content1">
+            <ul>
+                <li>WIEGHT&nbsp;&nbsp;GAIN&nbsp;&nbsp;=&nbsp;$20</li>
+                <li>WEIGHT&nbsp;LOSS&nbsp;=&nbsp;$30</li>
+                <li>CARDIO&nbsp;=&nbsp;$10</li>
+                <li>YOGA&nbsp;=&nbsp;$20</li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- FORM -->
+
+    <div class="form">
+        <h1>Join the best zym of Jaipur</h1>
+
+        <form action="noaction.php">
+            <div class="form1">
+                <input type="text" name="" id="" placeholder="Enter your name">
+            </div>
+            <div class="form1">
+                <input type="text" name="" id="" placeholder="Home Address">
+            </div>
+            <div class="form1">
+                <input type="text" name="" id="" placeholder="Age">
+            </div>
+            <div class="form1">
+                <input type="text" name="" id="" placeholder="Weight">
+            </div>
+            <div class="form1">
+                <input type="text" name="" id="" placeholder="Comments">
+            </div>
+            <br>
+            <div class="form2">
+                Gender &nbsp;&nbsp;:&nbsp;&nbsp; Male<input type="radio" name="Gender" id=""> FeMale:<input type="radio"
+                    name="Gender" id="">
+            </div>
+            <div class="form3">
+                Mobile &nbsp;Number &nbsp;&nbsp;: <input type="text" name="" id="" placeholder="Mobile number">
+            </div>
+            <div class="form4">
+                <textarea name="" id="" cols="60" rows="2" placeholder="Messages"></textarea>
+            </div>
+            <br><br>
+
+            <div class="php">
+                <input type="reset" placeholder="Reset">
+
+
+                <input type="submit" name="" placeholder="submit">
+            </div>
+
+
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
